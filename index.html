@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h2 style="text-align: center;">Compuertas lógicas</h2>
+
+    <h2 style="text-align: center;">TÍTULO DE LA PRÁCTICA<br>
+"Análisis y Simulación de Compuertas Lógicas Básicas (AND, OR y NOT)"</h2>
+
+<h2>Introducción</h2>
+<p>Las compuertas lógicas son circuitos electrónicos que realizan operaciones lógicas básicas sobre señales binarias (0 y 1) y son fundamentales para el funcionamiento de dispositivos digitales. Estas compuertas se utilizan para tomar decisiones y procesar información en sistemas electrónicos, desde computadoras hasta sistemas de control</p>
+ <h2>OBJETIVOS</h2>
+Objetivo General:
+<br>
+•	Analizar el comportamiento de las compuertas lógicas básicas mediante su construcción y simulación.
+<br>
+Objetivos Específicos:
+<br>
+•	Identificar las diferentes compuertas lógicas y sus símbolos.<br>
+•	Construir circuitos lógicos básicos utilizando compuertas.<br>
+•	Verificar las tablas de verdad mediante simulación y práctica.
+
+<h3>MARCO TEÓRICO</h3>
+  <p><strong>Conceptos importantes</strong></p>
+  <ul>
+    <li><strong>Compuerta AND:</strong> Solo da salida alta cuando todas las entradas son altas es decir se enciende el led cuando las dos entradas son 1.</li>
+    <li><strong>Compuerta OR:</strong> Se enciende el led si al menos una entrada es alta valor lógico 1, de lo contrario el led no se enciende.</li>
+    <li><strong>Compuerta NOT:</strong> Invierte la entrada,es decir si la entrada es 1, la salida seria 0.</li>
+  </ul>
+  <h3>Tabla de verdad y símbolo de la compuerta AND</h3>
+  <div class="contenedor">
+<table>
+  <tr><th>A</th><th>B</th><th>Salida </th></tr> 
+  <tr><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>0</td></tr>
+  <tr><td>1</td><td>0</td><td>0</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td></tr>
+</table>
+
+<img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/and1.jpg?raw=true" width="350">
+</div>
+<img src="https://raw.githubusercontent.com/fabricioqui95/readme/refs/heads/main/imagenes/74LS08.webp" width="350"> <p>Circuito integrado de como se debe conectar las compuertas en el protoboard</p>
+
+
+<h3>Tabla de verdad y símbolo de la compuerta OR</h3>
+<div class="contenedor">
+<table>
+  <tr><th>A</th><th>B</th><th>Salida</th></tr>
+  <tr><td>0</td><td>0</td><td>0</td></tr>
+  <tr><td>0</td><td>1</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>1</td><td>1</td></tr>
+</table>
+<img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/or.png?raw=true"width="350">
+</div>
+<img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/74hc32.png?raw=true" width="350"> <p>Circuito integrado de como se debe conectar las compuertas en el protoboard</p>
+
+
+<h3>Tabla de verdad y símbolo de la compuerta NOT</h3>
+<div class="contenedor">
+<table>
+  <tr><th>A</th><th>Salida</th></tr>
+  <tr><td>0</td><td>1</td></tr>
+  <tr><td>1</td><td>0</td></tr>
+</table>
+<img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/electronic-simbolo-puerta-not.png?raw=true"width="210">
+</div>
+<img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/images7404.jpg?raw=true" width="350"> <p>Circuito integrado de como se debe conectar las compuertas en el protoboard</p>
+
+  <h3>MATERIALES Y EQUIPO</h3>
+  <ul>
+    <li>Fuente de alimentación</li>
+    <li>Protoboard</li>
+    <li>Cables de conexión</li>
+    <li>LEDs</li>
+    <li>Resistencias</li>
+    <li>Compuertas lógicas (74LS08, 74LS32, 74LS04, etc.)</li>
+    <li>Multímetro </li>
+    <li>Conmutadores </li>
+  </ul>
+
+  <h3>PROCEDIMIENTO</h3>
+  <ol>
+    <li>Reconocer cada pin de cada una de las compuertas lógicas para conectar correctamente en el protoboard, trabajamos con 3 leds en cada simulación en tinkercad.</li>
+    <li>Alimentar adecuadamente el chip recordar que Vcc es el positivo y Gnd es el negativo o tierra.</li>
+    <li>Probar las diferentes combinaciones de entradas y observar la salida tambien en la tabla de resultados incluiremos lo observado en la práctica.</li>
+    <li>Tener orden al conectar los cables de conexion en cada circuito ya que solo asi se podra ver el buen funcionamiento de cada chip y si la tabla de verdad es correcta como en la teoria.</li>
+    <li>Después de armar los 3 circuitos registrar los resultados </li>
+  </ol>
+  <h3>TABLAS DE RESULTADOS PARA CADA CHIP</h3>
+  <p>Se señala en cada tabla de resultados los pines en los que van conectados las entradas y las salidas de cada compuerta lógica como esta conectado en la simuación del programa Tinkercad</p>
+  
+  <h3>COMPUERTA AND </h3>
+  <p>Simulación en tinkercad led 1 color rojo</p>
+  <table>
+    <tr>
+      <th>Entrada 1A(pin1)</th>
+      <th>Entrada 1B(pin2)</th>
+      <th>Salida 1(pin3)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+  <p>Simulación en tinkercad led 2 color amarillo</p>
+  <table>
+    <tr>
+      <th>Entrada 2A(pin4)</th>
+      <th>Entrada 2B(pin5)</th>
+      <th>Salida 2(pin6)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+  <p>Simulación en tinkercad led 3 color verde</p>
+  <table>
+    <tr>
+      <th>Entrada 4A(pin12)</th>
+      <th>Entrada 4B(pin13)</th>
+      <th>Salida 4(pin11)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+
+  <h3>COMPUERTA OR </h3>
+  <p>Simulación en tinkercad led 1 color rojo</p>
+  <table>
+    <tr>
+      <th>Entrada 1A(pin1)</th>
+      <th>Entrada 1B(pin2)</th>
+      <th>Salida 1(pin3)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+  <p>Simulación en tinkercad led 2 color amarillo</p>
+  <table>
+    <tr>
+      <th>Entrada 2A(pin4)</th>
+      <th>Entrada 2B(pin5)</th>
+      <th>Salida 2(pin6)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+  <p>Simulación en tinkercad led 3 color verde</p>
+  <table>
+    <tr>
+      <th>Entrada 4A(pin12)</th>
+      <th>Entrada 4B(pin13)</th>
+      <th>Salida 4(pin11)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+
+  <h3>COMPUERTA NOT </h3>
+  <p>Simulación en tinkercad led 1 color rojo</p>
+  <table>
+    <tr>
+      <th>Entrada 1(pin1)</th>
+      <th>Salida 1(pin2)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+<p>Simulación en tinkercad led 2 color amarillo</p>
+  <table>
+    <tr>
+      <th>Entrada 6(pin13)</th>
+      <th>Salida 6(pin12)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+<p>Simulación en tinkercad led 3 color verde</p>
+  <table>
+    <tr>
+      <th>Entrada 2(pin3)</th>
+      <th>Salida 2(pin4)</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>Funciona OK</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>Funciona OK</td>
+    </tr>
+  </table>
+  <h3>ANÁLISIS Y DISCUSIÓN</h3>
+  <ul>
+    <li>¿Coincidieron los resultados reales con los esperados?</li>
+    <p style="text-align: justify;">Si cabe recalcar que la electrónica es siempre exacta lo que demuestra que los sistemas digitales son confiables se puede decir que lo que puede fallar es el factor humano en el caso de alguna mala conexión es decir todos los electrónicos estan bien hechos </p>
+    <li>¿Qué errores se presentaron?</li>
+    <p style="text-align: justify;">Cuando no se sigue la configuración que nos da el planograma del circuito integrado ahi es cuando se conecta mal las entradas o salidas para esta ocasión me resulto fácil porque ya tengo conocimientos previos de electrónica y electricidad </p>
+    <li>¿Qué sucede si no se conecta correctamente la alimentación del chip?</li>
+    <p style="text-align: justify;">Si la compuerta lógica no recibe la alimentación correcta el circuito dejará de funcionar adecuadamente esto puede causar que las salidas del chip sean inestables, incorrectas o incluso que no haya salida en absoluto. En algunos casos si la fuente de alimentación es menor a 5 voltios también no va a funcionar eso sería en el  caso de la implementación física.</p>
+    <li>¿Cómo se interpreta una salida incorrecta?</li>
+    <p style="text-align: justify;">Una salida incorrecta en un circuito lógico suele indicar que existe un problema en la conexión, en la alimentación del chip o en el diseño del circuito también se debe a errores comunes como cables mal ubicados, entradas flotantes (sin conexión), polaridad invertida, incluso a un componente defectuoso. Interpretar una salida errónea implica verificar paso a paso las conexiones, comparar los resultados con la tabla de verdad </p>
+  </ul>
+
+  <h3>CONCLUSIONES</h3>
+  <ul>
+    <li style="text-align: justify;">La simulación y construcción de circuitos con compuertas lógicas fomentan el desarrollo del pensamiento lógico y el análisis de sistemas digitales. Esta experiencia práctica mejora la capacidad para diseñar soluciones electrónicas eficientes y entender cómo se construyen los dispositivos inteligentes actuales.</li>
+    <li style="text-align: justify;">Si se hizo fácil la implementación porque estos circuitos integrados tienen respuesta rápida para implmentación de sistemas digitales lo que nos permite saber cual es la lógica de programación al momento de usar varios condicionales. En el tema de conexiones es fácil seguir el diagrama de conexiones lo que permite que un sistema digital sea exacto y perfecto demostrando respuestas claras o como en este caso que los leds se enciendan</li>
+    <li style="text-align: justify;">El manejo de compuertas lógicas no solo es esencial para quienes estudian electrónica, sino también para quienes buscan comprender cómo se toman decisiones lógicas dentro de dispositivos digitales. Estas estructuras permiten realizar operaciones complejas mediante combinaciones simples y predecibles</li>
+    <li style="text-align: justify;">Al trabajar con compuertas lógicas reales, se refuerza el vínculo entre la teoría y la práctica. La conexión de chips TTL en un protoboard, junto con la observación de las salidas mediante LEDs, demuestra el funcionamiento lógico de cada compuerta y confirma la validez de las tablas de verdad.</li>
+  </ul>
+
+  <h3>ANEXOS</h3>
+  
+    <h2><strong> Capturas de pantalla del simulador</strong> </h2>
+    <h3>Compuerta AND</h3>
+<div class="contenedor-imagenes">
+        <figure>
+            <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%201.png?raw=true"width="600">
+        <figcaption>Figura 1: Enciende led rojo Salida 1 conmutador #1 y #2</figcaption>
+        </figure>
+       <figure>
+            <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%202.png?raw=true"width="600">
+        <figcaption>Figura 2: Enciende led amarillo Salida 2 conmutador #3 y #4</figcaption>
+        </figure> 
+</div>
+<div class="contenedor-imagenes">
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%203.png?raw=true"width="600">
+ <figcaption>Figura 3: Enciende led verde Salida 4 conmutador #5 y #6</figcaption>
+        </figure>
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%204.png?raw=true"width="600">
+ <figcaption>Figura 4: Todos los leds encendidos</figcaption>
+        </figure>
+</div>
+
+    <h3>Compuerta OR</h3>
+<div class="contenedor-imagenes">
+        <figure>
+            <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%205.png?raw=true"width="600">
+        <figcaption>Figura 5: Enciende led rojo Salida 1 Conmutador #1</figcaption>
+        </figure>
+       <figure>
+            <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%206.png?raw=true"width="600">
+        <figcaption>Figura 6: Enciende led rojo Salida 1 Conmutador #2</figcaption>
+        </figure> 
+</div>
+<div class="contenedor-imagenes">
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%207.png?raw=true"width="600">
+ <figcaption>Figura 7: Enciende led amarillo Salida 2 Conmutador #3</figcaption>
+        </figure>
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%208.png?raw=true"width="600">
+ <figcaption>Figura 8: Enciende led amarillo Salida 2 Conmutador #4</figcaption>
+        </figure>
+</div> 
+
+<div class="contenedor-imagenes">
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%209.png?raw=true"width="600">
+ <figcaption>Figura 9: Enciende led verde Salida 4 Conmutador #5</figcaption>
+        </figure>
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%2010.png?raw=true"width="600">
+ <figcaption>Figura 10: Enciende led verde Salida 4 Conmutador #6</figcaption>
+        </figure>
+</div> 
+<div class="contenedor-imagenes">
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figurra%2011.png?raw=true"width="600">
+ <figcaption>Figura 11: Enciende todos los leds</figcaption>
+        </figure>
+
+    <figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%2012.png?raw=true"width="600">
+ <figcaption>Figura 12: Enciendido aleatorio de conmutadores</figcaption>
+        </figure>
+</div>
+<h3>Compuerta NOT</h3>
+<div class="contenedor-imagenes">
+        <figure>
+            <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%2013.png?raw=true"width="600">
+        <figcaption>Figura 13: Enciende led rojo Salida 1 Conmutador #1</figcaption>
+        </figure>
+       <figure>
+            <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%2014.png?raw=true"width="600">
+        <figcaption>Figura 14: Enciende led rojo Salida 6 Conmutador #2</figcaption>
+        </figure> 
+</div>
+<div class="contenedor-imagenes">
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%2015.png?raw=true"width="600">
+ <figcaption>Figura 15: Enciende led amarillo Salida 2 Conmutador #3</figcaption>
+        </figure>
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figurra%2016.png?raw=true"width="600">
+ <figcaption>Figura 16: Todos los leds encendidos</figcaption>
+        </figure>
+</div> 
+<figure>
+ <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/figura%20final.png?raw=true"width="800">
+ <figcaption>Figura 17: Todos los circuitos armados con componentes electrónicos y simulado en Tinkercad</figcaption>
+        </figure>
+    <h2><strong> Esquemas de conexión en Tinkercad</strong><a href="https://www.tinkercad.com/things/6V51m9O3rt3-amazing-borwo/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard">Dar click aquí</a> </h2>
+  <h3>Esquemático compuerta AND</h3>
+    <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/esquematico%20and.png?raw=true"width="1000">
+<h3>Esquemático compuerta OR</h3>
+    <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/esquematico%20or.png?raw=true"width="1000">
+<h3>Esquemático compuerta NOT</h3>
+    <img src="https://github.com/fabricioqui95/readme/blob/main/imagenes/esquematico%20not.png?raw=true"width="1000">
+</body>
+</html>
